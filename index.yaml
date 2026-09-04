@@ -3,7 +3,7 @@ entries:
   dlp-masking-service:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-09-04T15:21:10.966069+03:00"
+    created: "2026-09-04T16:15:36.040962+03:00"
     description: OpenShift-compatible Helm chart for the DLP masking backend and Streamlit
       frontend
     digest: 50fbc3f0fd88c2ec99a8b8f26d49e2d76a975127e0a36e5edfdb81f30cda7941
@@ -19,4 +19,15 @@ entries:
     urls:
     - https://coone-ai.github.io/helm-charts/dlp-masking-service-1.0.1.tgz
     version: 1.0.1
-generated: "2026-09-04T15:21:10.963644+03:00"
+  heimdal:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-09-04T16:15:36.043768+03:00"
+    description: Heimdal security runtime and LiteLLM gateway
+    digest: 2a64e96f16637be0acb35fcd4c157e110dbc0939ce008991ede797043efe59f5
+    name: heimdal
+    type: application
+    urls:
+    - https://coone-ai.github.io/helm-charts/heimdal-0.2.0.tgz
+    version: 0.2.0
+generated: "2026-09-04T16:15:36.038918+03:00"
