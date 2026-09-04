@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  dlp-masking-service:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2026-09-04T15:21:10.966069+03:00"
+    description: OpenShift-compatible Helm chart for the DLP masking backend and Streamlit
+      frontend
+    digest: 50fbc3f0fd88c2ec99a8b8f26d49e2d76a975127e0a36e5edfdb81f30cda7941
+    keywords:
+    - dlp
+    - pii
+    - masking
+    - openshift
+    maintainers:
+    - name: Co-one AI
+    name: dlp-masking-service
+    type: application
+    urls:
+    - https://coone-ai.github.io/helm-charts/dlp-masking-service-1.0.1.tgz
+    version: 1.0.1
+generated: "2026-09-04T15:21:10.963644+03:00"
