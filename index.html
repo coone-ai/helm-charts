@@ -3,13 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Co-one Helm Charts</title>
+    <meta name="description" content="Official Co-one AI Helm chart repository for Kubernetes and OpenShift deployments.">
+    <title>Co-one AI Helm Charts</title>
+    <style>
+      :root { color-scheme: dark; --bg: #07111f; --surface: #0d1b2d; --border: #223653; --text: #edf4ff; --muted: #9fb0c7; --accent: #5eead4; --accent-2: #60a5fa; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: radial-gradient(circle at 80% 0%, #102d45 0, transparent 38%), var(--bg); color: var(--text); font: 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      main { width: min(980px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0; }
+      .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      h1 { margin: 8px 0 16px; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1; letter-spacing: -.05em; }
+      h2 { margin-top: 52px; font-size: 1.7rem; }
+      p { color: var(--muted); max-width: 720px; }
+      a { color: var(--accent); }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 48px; }
+      .button { padding: 10px 16px; border: 1px solid var(--border); border-radius: 10px; text-decoration: none; font-weight: 650; }
+      .button.primary { color: #03221d; background: var(--accent); border-color: var(--accent); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+      .card { padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
+      .card h3 { margin: 0; font-size: 1.25rem; }
+      .version { display: inline-block; margin: 12px 0; padding: 2px 9px; color: var(--accent-2); background: #10243c; border-radius: 999px; font: 600 .85rem ui-monospace, monospace; }
+      pre { overflow-x: auto; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: #050b14; color: #cde4ff; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); }
+    </style>
   </head>
   <body>
-    <h1>Co-one Helm Charts</h1>
-    <p>This repository is ready to be used as a Helm chart repository.</p>
-    <p><a href="./index.yaml">View repository index</a></p>
-    <h2>Available chart</h2>
-    <p><code>dlp-masking-service</code> — version <code>1.0.1</code></p>
+    <main>
+      <header>
+        <div class="eyebrow">Co-one AI · Kubernetes</div>
+        <h1>Helm Charts</h1>
+        <p>Official Helm repository for deploying Co-one AI services on Kubernetes and OpenShift.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/coone-ai/helm-charts">View on GitHub</a>
+          <a class="button" href="./index.yaml">Repository index</a>
+        </div>
+      </header>
+      <section>
+        <h2>Available charts</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Heimdal</h3>
+            <span class="version">0.3.0</span>
+            <p>Security runtime and LiteLLM gateway for governed AI model access.</p>
+            <a href="./heimdal-0.3.0.tgz">Download chart</a>
+          </article>
+          <article class="card">
+            <h3>DLP Masking Service</h3>
+            <span class="version">1.0.2</span>
+            <p>PII detection and masking service for Kubernetes and OpenShift workloads.</p>
+            <a href="./dlp-masking-service-1.0.2.tgz">Download chart</a>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Get started</h2>
+        <pre><code>helm repo add coone https://coone-ai.github.io/helm-charts
+helm repo update
+
+helm search repo coone
+helm install heimdal coone/heimdal</code></pre>
+      </section>
+      <footer>Maintained by <a href="https://co-one.com">Co-one AI</a>.</footer>
+    </main>
   </body>
 </html>
